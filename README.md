@@ -41,4 +41,7 @@ Arch Linux dotfiles for configuring:
 - yay
 - Docker
 - LXAppearance
-- 1PasswordX 
+- 1PasswordX
+
+
+Influenced by [Arman1371](https://github.com/arman1371/dotfiles)  
