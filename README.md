@@ -9,6 +9,7 @@ Arch Linux dotfiles for configuring:
 - Xmodmap
 
 ## Screenshots
+![screenshot3](https://github.com/mauricekraus/dotfiles/blob/master/screenshots/screen3.png)
 ![screenshot1](https://github.com/mauricekraus/dotfiles/blob/master/screenshots/screen1.png)
 ![screenshot2](https://github.com/mauricekraus/dotfiles/blob/master/screenshots/screen2.png)
 
