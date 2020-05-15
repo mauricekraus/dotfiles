@@ -9,6 +9,8 @@ Arch Linux dotfiles for configuring:
 - Xmodmap
 
 ## Screenshots
+![screenshot1](https://github.com/mauricekraus/dotfiles/blob/master/screenshots/screen1.png)
+![screenshot2](https://github.com/mauricekraus/dotfiles/blob/master/screenshots/screen2.png)
 
 ## External Tools
 - [Spicetify](https://github.com/khanhas/spicetify-cli)
