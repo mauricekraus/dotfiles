@@ -1,6 +1,6 @@
 #!/bin/bash
 
-state_file=/home/mk/.config/polybar/scripts/dunst_toggle/state
+state_file=/home/maurice/.config/polybar/scripts/dunst_toggle/state
 current_state=`cat $state_file`
 
 notify-send "DUNST_COMMAND_TOGGLE"

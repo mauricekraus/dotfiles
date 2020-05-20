@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/mk/.oh-my-zsh"
+export ZSH="/home/maurice/.oh-my-zsh"
 
 export TERM="xterm-256color"
 
@@ -53,6 +53,9 @@ plugins=(
     yarn
     vscode
     sudo
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,10 +100,35 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+
 source $ZSH/oh-my-zsh.sh
 
 
-export PATH="$PATH:$(yarn global bin)"
-
 bindkey "\e[1;5D" backward-word
 bindkey "\e[1;5C" forward-word
+alias pacman='sudo pacman'
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

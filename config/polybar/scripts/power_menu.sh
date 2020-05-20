@@ -40,7 +40,7 @@ BORDER_COLOR="${BORDER_COLOR:-#222222}"
 ROFI_TEXT="${ROFI_TEXT:-Quit:}"
 ROFI_OPTIONS=(${ROFI_OPTIONS:--width 11 -me-select-entry 'MouseMiddle' -me-accept-entry 'MousePrimary' -hide-scrollbar -location 1 -yoffset 25 -bw 5 -theme nord -theme-str 'inputbar { enabled: false; }'})
 ENABLE_CONFIRMATIONS=false
-LOCKSCRIPT="i3lock-fancy-rapid 8 5"
+LOCKSCRIPT="i3lock-fancy-rapid 8 5 -u"
 
 # Zenity options
 ZENITY_TITLE="${ZENITY_TITLE:-Menu}"

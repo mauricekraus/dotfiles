@@ -1,0 +1,44 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 800,
+       "width": 1251,
+       "x": 1094,
+       "y": 320
+    },
+    "name": "GitKraken",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^GitKraken$",
+       "instance": "^gitkraken$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Git Terminal",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Alacritty$",
+       "instance": "^Alacritty$",
+       "title": "Term Git"
+       }
+    ],
+    "type": "con"
+}
+

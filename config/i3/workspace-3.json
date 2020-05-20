@@ -1,0 +1,85 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1350,
+       "width": 3420,
+       "x": 10,
+       "y": 45
+    },
+    "name": "Visual Studio Code",
+    "percent": 0.6,
+    "swallows": [
+       {
+        "class": "^Code$",
+        "instance": "^code$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "none",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 1 children
+            "border": "none",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.4,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "none",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Terminal 1",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                        "class": "^Alacritty$",
+                        "instance": "^Alacritty$",
+                        "title": "Term VSCode 1"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "maurice@archmk: ~",
+            "percent": 0.6,
+            "swallows": [
+               {
+                "class": "^Alacritty$",
+                "instance": "^Alacritty$",
+                "title": "Term VSCode 2"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Nord",
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "workbench.editor.revealIfOpen": true
 }

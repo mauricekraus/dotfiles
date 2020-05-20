@@ -113,8 +113,8 @@ format-foreground = ${colors.blue}
 label-layout =  %icon%
 label-layout-padding = 1
 
-layout-icon-0 = us;US
-layout-icon-1 = ir;IR
+layout-icon-0 = de;DE
+layoutF-icon-1 = ir;IR
 
 #################################################
 # volume                                        #
@@ -159,9 +159,9 @@ label-urgent-padding = 2
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
 ws-icon-5 = 6;6
 ws-icon-6 = 7;7
 ws-icon-7 = 8;8
@@ -197,6 +197,9 @@ label = %output%
 [module/player]
 type = custom/script
 exec = /opt/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f '   %{A1:/opt/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py previous:}  %{A} %{A1:/opt/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:/opt/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py next:}  %{A} {title} - {artist}' --icon-stopped '' --icon-playing '' --icon-paused ''
+click-left = ~/.config/polybar/scripts/control_music.sh -b
+click-right = playerctl next
+click-middle = playerctl play-pause
 tail = true
 label-font = 4
 
@@ -210,7 +213,7 @@ exec = echo ''
 format = <label>
 format-padding = 1
 format-foreground = ${colors.red}
-label = %{A1:~/.config/rofi/power/powermenu.sh:} %output% %{A}
+label = %{A1:~/.config/polybar/scripts/power_menu.sh:} %output% %{A}
 
 
 #################################################
