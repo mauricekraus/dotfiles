@@ -1,5 +1,19 @@
 {
-    "workbench.colorTheme": "Nord",
-    "keyboard.dispatch": "keyCode",
-    "workbench.editor.revealIfOpen": true
+  "workbench.colorTheme": "Nord",
+  "keyboard.dispatch": "keyCode",
+  "workbench.editor.revealIfOpen": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.external.linuxExec": "Alacritty",
+  "terminal.integrated.cursorBlinking": true,
+
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontSize": 17,
+  "workbench.startupEditor": "newUntitledFile"
 }
