@@ -1,19 +1,50 @@
 {
   "workbench.colorTheme": "Nord",
-  "keyboard.dispatch": "keyCode",
-  "workbench.editor.revealIfOpen": true,
+  "terminal.external.linuxExec": "Alacritty",
+  "terminal.integrated.cursorBlinking": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.preferences.importModuleSpecifier": "relative",
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.external.linuxExec": "Alacritty",
-  "terminal.integrated.cursorBlinking": true,
-
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.fontSize": 17,
-  "workbench.startupEditor": "newUntitledFile"
+  "prettier.requireConfig": true,
+  "prettier.semi": false,
+  "prettier.tabWidth": 1,
+  "prettier.useTabs": true,
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)", // tw`...`
+    "tw=\"([^\"]*)", // <div tw="..." />
+    "tw={\"([^\"}]*)", // <div tw={"..."} />
+    "tw\\.\\w+`([^`]*)", // tw.xxx`...`
+    "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript",
+  },
+  "editor.quickSuggestions": {
+      "strings": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 2,
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "python.formatting.provider": "black",
+  "python.linting.mypyEnabled": true,
+  "python.experiments.enabled": false
 }
